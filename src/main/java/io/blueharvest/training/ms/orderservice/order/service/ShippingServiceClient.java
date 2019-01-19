@@ -23,7 +23,7 @@ public interface ShippingServiceClient {
 
     }
 
-    @PostMapping("/api/shipping-service/requests")
+    @PostMapping("/requests")
     void requestShipping(@RequestBody ShippingRequest shippingRequest);
 
 }

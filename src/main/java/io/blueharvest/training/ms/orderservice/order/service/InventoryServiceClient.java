@@ -22,7 +22,7 @@ public interface InventoryServiceClient {
 
     }
 
-    @PostMapping("/api/inventory-service/products/{product-name}/reservations")
+    @PostMapping("/products/{product-name}/reservations")
     ReservationResponse reserveProduct(@PathVariable("product-name") String productName);
 
 }
