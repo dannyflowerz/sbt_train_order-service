@@ -17,4 +17,5 @@ apt-get -y --force-yes install openjdk-8-jdk
 update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 
 # Start server
-java -jar order-service.jar
+java -DEUREKA_URI=http://35.246.52.225:8761/eureka -jar order-service.jar >> application.log
+# TODO replace IP with current address of service-registry
